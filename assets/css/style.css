@@ -50,7 +50,8 @@ body {
     flex-direction: column;
     background-color: rgb(226, 226, 226);
     padding: 1rem 2rem 0.8rem 2rem ;
-}
+    
+} 
 
 .filter {
     width: 100%;
@@ -71,5 +72,25 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
+    
+}
+
+h3{
+    color:  rgb(115, 118, 120);
+    font-weight: 300;
+}
+
+.button{
+    width:10%;
+    height: 40px;
+    background-color: rgb(0, 81, 159);
+    color: white;
+    border-radius: 5px;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    font-family: roboto;
+    font-weight: 500;
+    
 }
 
