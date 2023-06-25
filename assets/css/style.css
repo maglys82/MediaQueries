@@ -49,9 +49,9 @@ body {
     text-align: center;
     flex-direction: column;
     background-color: rgb(226, 226, 226);
-    padding: 1rem 2rem 0.8rem 2rem ;
-    
-} 
+    padding: 1rem 2rem 0.8rem 2rem;
+
+}
 
 .filter {
     width: 100%;
@@ -69,28 +69,40 @@ body {
 }
 
 .products {
+    margin-top: 2rem;
     display: flex;
+    justify-content: space-evenly;
+}
+
+.products .model-description{
+    padding-bottom: 1.5rem;
+}
+
+.products .car{
+    display: flex;
+    align-content: center;
     flex-direction: column;
     text-align: center;
     
-    
 }
 
-h3{
-    color:  rgb(115, 118, 120);
+.products h3 {
+    font-family: roboto;
+    font-size: 1.2rem;
+    color: rgb(115, 118, 120);
     font-weight: 300;
 }
 
-.button{
-    width:10%;
-    height: 40px;
+.products .button {
+    padding: 8px 1rem;
     background-color: rgb(0, 81, 159);
     color: white;
     border-radius: 5px;
-    padding-top: 8px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: roboto;
-    font-weight: 500;
-    
 }
 
+.pagination {
+    margin-top: 25px;
+    justify-content: center;
+}
