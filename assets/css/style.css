@@ -30,10 +30,14 @@ main {
 
 footer {
     grid-area: pie-de-pagina;
-    background: #d02a1e;
+    background-color: rgb(3, 40, 109);
     color: white;
+    
+    
+    
 
 }
+
 
 body {
     display: grid;
@@ -106,3 +110,13 @@ body {
     margin-top: 25px;
     justify-content: center;
 }
+
+.foot-page { 
+    text-align: center;
+    padding-top: 10px;    
+    
+}
+
+  
+
+
