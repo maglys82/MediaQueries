@@ -44,7 +44,7 @@ footer {
 footer .footer-icons {
     text-align: center;
 }
-
+ 
 
 body {
     display: grid;
@@ -97,6 +97,10 @@ body {
 
 }
 
+.products .car-mobile img{
+    width: 400px;
+
+}
 .products h3 {
     font-family: roboto;
     font-size: 1.2rem;
@@ -122,6 +126,11 @@ body {
     display: none;
 }
 
+.products .car.car-desktop{
+    display: none;
+
+}
+
 @media (min-width: 576px) {
     body {
         grid-template-columns: 1fr 4fr;
@@ -133,9 +142,6 @@ body {
             "menu seccion-principal"
             "menu seccion-principal"
             "pie-de-pagina seccion-principal";
-            min-height: 100vh;
-
-
     }
 
     header {
@@ -161,9 +167,8 @@ body {
     .products{
         display: flex;
         flex-wrap: wrap; 
-
-
     }
+
     .car img{
         width: 200px;
     
@@ -173,7 +178,12 @@ body {
         margin-bottom: 1rem;
     }
 
-    .page-navigation {
-        
+    .car.car-mobile img{
+        width: 200px;
+    }
+
+    .products .car.car-desktop{
+        display: flex
+    
     }
 }
