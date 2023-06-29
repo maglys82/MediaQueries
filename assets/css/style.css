@@ -4,9 +4,13 @@
     font-family: roboto;
 }
 
+p {
+    margin: 0;
+}
+
 header {
+    grid-area: menu;
     background-color: rgb(0, 81, 159);
-    height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,30 +22,33 @@ header {
 }
 
 nav {
-    grid-area: menu;
+    
     font-size: 1.5rem;
-
 }
 
 main {
     grid-area: seccion-principal;
-
 }
 
 footer {
     grid-area: pie-de-pagina;
     background-color: rgb(3, 40, 109);
     color: white;
-    
-    
-    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0 1.5rem;
+}
 
+
+footer .footer-icons {
+    text-align: center;
 }
 
 
 body {
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 70px 10fr 1fr;
     grid-template-areas:
         "menu"
         "seccion-principal"
@@ -78,16 +85,16 @@ body {
     justify-content: space-evenly;
 }
 
-.products .model-description{
+.products .model-description {
     padding-bottom: 1.5rem;
 }
 
-.products .car{
+.products .car {
     display: flex;
     align-content: center;
     flex-direction: column;
     text-align: center;
-    
+
 }
 
 .products h3 {
@@ -111,12 +118,45 @@ body {
     justify-content: center;
 }
 
-.foot-page { 
-    text-align: center;
-    padding-top: 10px;    
-    
+.options{
+ display: none;
 }
 
-  
+@media (min-width: 576px){
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "menu seccion-principal"
+            "menu seccion-principal"
+            "menu seccion-principal"
+            "menu seccion-principal"
+            "pie-de-pagina seccion-principal";
+        
+        
+    } 
+
+    header {
+        flex-direction: column;
+        justify-content: start;
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+
+    header .mdi.mdi-menu{
+        display: none;
+    }
+
+    .options{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-size: 1rem;
+        gap: 1rem;
+
+    }
+
+
+}
 
 
