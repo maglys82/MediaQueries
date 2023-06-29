@@ -22,7 +22,7 @@ header {
 }
 
 nav {
-    
+
     font-size: 1.5rem;
 }
 
@@ -118,23 +118,25 @@ body {
     justify-content: center;
 }
 
-.options{
- display: none;
+.options {
+    display: none;
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
     body {
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
         grid-template-areas:
             "menu seccion-principal"
             "menu seccion-principal"
             "menu seccion-principal"
             "menu seccion-principal"
+            "menu seccion-principal"
             "pie-de-pagina seccion-principal";
-        
-        
-    } 
+            min-height: 100vh;
+
+
+    }
 
     header {
         flex-direction: column;
@@ -143,11 +145,11 @@ body {
         padding-top: 1rem;
     }
 
-    header .mdi.mdi-menu{
+    header .mdi.mdi-menu {
         display: none;
     }
 
-    .options{
+    .options {
         display: flex;
         flex-direction: column;
         list-style: none;
@@ -156,7 +158,22 @@ body {
 
     }
 
+    .products{
+        display: flex;
+        flex-wrap: wrap; 
 
+
+    }
+    .car img{
+        width: 200px;
+    
+    }
+    
+    .car{
+        margin-bottom: 1rem;
+    }
+
+    .page-navigation {
+        
+    }
 }
-
-
